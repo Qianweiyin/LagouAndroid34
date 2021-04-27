@@ -1,3 +1,5 @@
+package plugin.LifeCycleTransform
+
 import com.android.build.api.transform.DirectoryInput
 import com.android.build.api.transform.QualifiedContent
 import com.android.build.api.transform.Transform
