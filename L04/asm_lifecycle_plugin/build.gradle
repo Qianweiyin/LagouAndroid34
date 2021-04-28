@@ -10,9 +10,11 @@ dependencies {
 
     implementation "com.android.tools.build:gradle:4.1.3"
 
+
     //ASM相关依赖
     implementation 'org.ow2.asm:asm:7.1'
     implementation 'org.ow2.asm:asm-commons:7.1'
+
 }
 
 group = 'qwy.lifecycle.plugin'

@@ -12,6 +12,7 @@ public class LifeCyclePlugin implements Plugin<Project> {
 
         def android = project.extensions.getByType(AppExtension)
         println '------------  registering AutoTrackTransform  ---------------'
+
         LifeCycleTransform transform = new LifeCycleTransform()
         android.registerTransform(transform)
     }

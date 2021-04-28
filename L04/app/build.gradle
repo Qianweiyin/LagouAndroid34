@@ -1,22 +1,22 @@
 
 apply plugin: 'com.android.application'
 
-////自定义Gradle插件中properties的文件名
-//apply plugin: 'asm.lifecycle'
-//
-//buildscript {
-//
-//    repositories {
-//        google()
-//        jcenter()
-//        //自定义插件maven地址
-//        maven { url '../asm_lifecycle_repo' }
-//    }
-//    dependencies {
-//        //加载自定义插件 group + module + version
-//        classpath 'qwy.lifecycle.plugin:asm_lifecycle_plugin:1.0.0'
-//    }
-//}
+//自定义Gradle插件中properties的文件名
+apply plugin: 'asm.lifecycle'
+
+buildscript {
+
+    repositories {
+        google()
+        jcenter()
+        //自定义插件maven地址
+        maven { url '../asm_lifecycle_repo' }
+    }
+    dependencies {
+        //加载自定义插件 group + module + version
+        classpath 'qwy.lifecycle.plugin:asm_lifecycle_plugin:1.0.0'
+    }
+}
 
 
 
